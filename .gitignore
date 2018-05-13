@@ -1,0 +1,5 @@
+echo node_modules
+echo js
+echo fonts
+echo css
+echo index.html

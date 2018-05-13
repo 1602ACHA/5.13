@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <script>
+        document.documentElement.style.fontSize = innerWidth / 750 * 100 + "px";
+    </script>
+</head>
+
+<body>
+    <!-- <canvas style="border: 1px #ccc solid"></canvas> -->
+    <div class="wrap">
+        <header>
+            <span class="iconfont icon icon-chevron-thin-left"></span>
+            <span><a href="#" class="btnA">大盘排片</a><a href="#">城市排片</a></span>
+            <span class="iconfont icon icon-zixun"></span>
+        </header>
+        <main class="main">
+            <div>
+                <nav>
+                    <span>前一天</span>
+                    <span>2017年11月08日</span>
+                    <span>后一天</span>
+                </nav>
+                <aside>
+                    <span class="firsts">全国</span>
+                    <span class="firsts">全时段</span>
+                    <span>场次</span>
+                </aside>
+                <p><span>排片趋势</span></p>
+                <canvas class="can"></canvas>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>影片</th>
+                            <th>场次占比</th>
+                            <th>场次</th>
+                            <th>票房（万）</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+    </div>
+</body>
+<script src="js/zepto.js"></script>
+<script src="js/script.js"></script>
+<script src="js/iscroll.js"></script>
+<script>
+    var myIScroll = new IScroll('.main', {
+
+    })
+</script>
+
+</html>
